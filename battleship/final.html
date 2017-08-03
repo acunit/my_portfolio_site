@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="final.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="finalModel.js" charset="utf-8"></script>
+    <script src="finalController.js" charset="utf-8"></script>
+    <meta charset="utf-8">
+    <title>Battleship</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flexItem header">
+        <h1>Battleship</h1>
+      </div>
+      <div class="flexItem flexBoard">
+        <table id="board"></table>
+      </div>
+      <div class="flexItem flexShipStatus">
+        <h3 id="statusOfShips">Status of ships:</h3>
+        <p id="carrier">Aircraft Carrier:   <a id="carrierHits"></a></p>
+        <p id="battleship1">Battleship 1:   <a id="battleship1Hits"></a></p>
+        <p id="battleship2">Battleship 2:   <a id="battleship2Hits"></a></p>
+        <p id="cruiser1">Cruiser 1:   <a id="cruiser1Hits"></a></p>
+        <p id="cruiser2">Cruiser 2:   <a id="cruiser2Hits"></a></p>
+        <p id="destroyer1">Destroyer 1:   <a id="destroyer1Hits"></a></p>
+        <p id="destroyer2">Destroyer 2:   <a id="destroyer2Hits"></a></p>
+        <p id="submarine">Submarine:   <a id="submarineHits"></a></p>
+      </div>
+      <div class="flexItem stats">
+        <h3 class="gameStats">Torpedoes Fired: <a id="shotCounter"></a></h3>
+        <h3 class="gameStats">Hits: <a id="hitCounter"></a></h3>
+        <h3 class="gameStats">Misses: <a id="missCounter"></a></h3>
+        <div class="gameStats">
+          <h2 class="status resultReset">Result: <a id="winLose"></a></h2>
+          <button id="resetButton" class="resultReset" type="button">New Game</button>
+        </div>
+      </div>
+  </div>
+  </body>
+</html>

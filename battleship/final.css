@@ -1,0 +1,157 @@
+/*Backgroun image of page*/
+body {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5f/Bundesarchiv_Bild_146-1989-012-03,_Schlachtschiff_Bismarck_in_der_Ostsee.jpg");
+  background-repeat: repeat;
+  background-size: 100%;
+}
+/*styling of the board squares*/
+.cell {
+  border: 1px solid #ffffff;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/*border for the game board*/
+table {
+  border: 10px solid #ffffff;
+}
+
+/*Colors for ships when built*/
+/*.ship5 {
+  background-color: green;
+}
+
+.ship4 {
+  background-color: purple;
+}
+
+.ship3 {
+  background-color: yellow;
+}
+
+.ship2 {
+  background-color: orange;
+}
+
+.ship {
+  background-color: darkgray;
+}*/
+/*style for cells when a click is a miss*/
+.cellMiss {
+  border: 1px solid #ffffff;
+  height: 40px;
+  width: 40px;
+  background-color: blue;
+}
+/*after game is over, styling for showing where the missed ships were*/
+.missedShip {
+  background-color: grey;
+}
+/*style for a cell when a click is a hit*/
+.cellHit {
+  border: 1px solid #ffffff;
+  height: 40px;
+  width: 40px;
+  background-color: red;
+}
+/*hidden display of the game result*/
+.status {
+  display: none;
+}
+/*layout of our flex container*/
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;;
+  /*border: 1px solid #ffffff;*/
+}
+/*border for flex items when adjusting the layout*/
+.flexItem {
+  /*border: 1px solid #ffffff;*/
+}
+/*sizing of the flex ship status section*/
+.flexShipStatus {
+  width: 28%;
+  padding-left: 3%;
+}
+/*sizing of the flex board section*/
+
+.flexBoard {
+  padding-left: 7%;
+  padding-right: 4%;
+}
+
+.header {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  border: 1px solid #ffffff;
+  margin: 15px 40% 25px 40%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #ffffff;
+}
+
+.stats {
+  width: 100%;
+}
+
+h3 {
+  background-color: #ffffff;
+  padding: 2px 5px 2px 5px;
+}
+
+.flexBoard {
+  align-items: center;
+  justify-content: center;
+}
+
+.gameStats {
+  padding-left: 5%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.resultReset {
+  display: inline;
+}
+
+#resetButton {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 13px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 10%;
+}
+
+.sunk {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+p {
+  font-size: 20px;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+#statusOfShips {
+  margin-right: 30%;
+}
+
+#hitCounter {
+  color: red;
+}
+
+#missCounter {
+  color: blue;
+}
